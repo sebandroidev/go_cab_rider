@@ -22,4 +22,8 @@ class AppUtils {
     }
     return MaterialColor(color.value, swatch);
   }
+
+  static bool isCurrentThemeLight(BuildContext context) {
+    return MediaQuery.of(context).platformBrightness == Brightness.light;
+  }
 }
